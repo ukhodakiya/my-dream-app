@@ -1,0 +1,32 @@
+<div class="container">
+  <div class="row">
+    <div class="col-xs-12 col-sm-12 col-md-8 col-sm-offset-1 col-md-offset-2">
+      <!--<h3><b>I 'm in component!!</b></h3>
+      <hr>
+      <app-servers></app-servers>!-->
+      <ul class="nav nav-tabs">
+       <li role="presentation" class="active"  routerLinkActive="active" [routerLinkActiveOptions]="{exact: true}" ><a routerLink="/home">Home</a></li>
+        <li role="presentation" class="active"  routerLinkActive="active"><a routerLink="/servers">Servers</a></li>
+        <li role="presentation" class="active"  routerLinkActive="active"><a routerLink="/map">Map</a></li>
+
+      </ul>
+    </div>
+  </div>
+
+</div>
+
+<div class="container">
+  <div class="row">
+    <div class="col-xs-12 col-md-8 col-md-offset-2">
+      <!--  <app-active-users></app-active-users>
+     <app-inactive-users></app-inactive-users>!-->
+
+
+      <router-outlet></router-outlet>
+
+    </div>
+  </div>
+</div>
+
+
+
